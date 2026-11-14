@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bhool Bulayya</title>
+  <meta name="description" content="Bhool Bulayya: fly Jugnoo the firefly through a neon 3D maze, eat the orbs, flip the imposters.">
+  <meta name="theme-color" content="#160a4a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%AA%99%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+      "react": "https://esm.sh/react@18.3.1",
+      "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+      "htm": "https://esm.sh/htm@3.1.1"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <canvas id="mm" width="150" height="130" aria-label="Minimap"></canvas>
+  <div id="fx"></div><div id="flash"></div>
+  <div id="ui"></div>
+  <div id="boot">Loading Bhool Bulayya…</div>
+  <noscript><div id="boot">Bhool Bulayya needs JavaScript and WebGL.</div></noscript>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
